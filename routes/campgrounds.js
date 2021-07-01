@@ -6,6 +6,7 @@ const { isLoggedIn, isAuthor, validateCampground } = require('../middleware');
 const multer = require('multer');
 const { storage } = require('../cloudinary');
 const upload = multer({ storage });
+const mbxStyles = require('@mapbox/mapbox-sdk/services/styles');
 
 const Campground = require('../models/campground');
 
